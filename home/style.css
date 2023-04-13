@@ -19,6 +19,13 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Menu*/
 .content {
     width: 100vw;
@@ -27,7 +34,6 @@ html {
     justify-content: space-around;
     align-items: center;
     background-color: #412e2e;
-    position: fixed;
     padding-left: 0rem;
 }
 
@@ -72,46 +78,33 @@ html {
 
 /* graficos sangue */
 .graficos-sangue {
-    height: 50vh;
+    margin: 40px 0 40px 10px;
+    height: 280px;
+    width: 1600px;
+    padding: 0 38px;
     background: rgba(251, 230, 234, 1);
-    padding: 100px;
-    width: 100vw;
     line-height: 1.7em;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     gap: 50px;
+    border-radius: 15px;
 }
 
 .agendeDoacao {
     align-items: baseline;
     padding: 50px;
 }
-/*
-.graficosText {
 
-}
-
-.incorporaMapa {
-
-}
-*/
 /*seção cards*/
 .cards{
-    height: 80vh;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 50px 100px;
-    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .redCards{
@@ -158,4 +151,50 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .caledar{
+        width: 273px;
+        height: 211px;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 15px;
+        color: #94A2AB;
+        padding: 30px;
+    }
+
+    .caledar h1{
+        width: 190px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .caledar p{
+        width: 200px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .caledar a{
+        color: #E34E48;
+        font-size: 9px;
+        text-decoration: underline;
+    }
+
+    .caledar img{
+     height: 60px;
+    }
+
+    .maps{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        border-radius: 15px;
     }
